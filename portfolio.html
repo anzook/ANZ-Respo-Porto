@@ -2,22 +2,24 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <link type="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>AN Zook Portfolio</title>
 </head>
 <body>
+<div class="wrapper">
+<div class="headerbox">
 <header class="header1">
     <span class="name1"> 
-        <h1>Alexander N. Zook</h1>
+        <h1 id="namelogo">Alexander N. Zook</h1>
     </span>
     <nav class="navbar">  <!-- An attempt to utilize semantics to identify the nav bar links, howver a list is the most practical way to organize this-->
-        <ul>
-            <li><a href="index.html">Home</a> |</li>
-            <li><a href="portfolio.html">Portfolio</a> |</li>
-            <li><a href="contact.html">Contact</a> |</li>
-        </ul>
+        <a href="index.html">About</a><span class="navdiv"> | </span>
+        <a href="portfolio.html">Portfolio</a><span class="navdiv"> | </span>
+        <a href="contact.html">Contact</a>
     </nav>
 </header>
+</div>
+<div class="maincon">
 <header class="header2">
     <h1>Portfolio</h1>
 </header>
@@ -41,7 +43,9 @@
             <h2>Project 3</h2>
         </div>
 </div>
-    
+</div>
+<div class="push"></div> <!-- push fix for sticky footer from css tricks.com-->
+</div>
 <footer>
     <p class="copy">Copyrite &#169;</p>
 </footer>    
