@@ -25,19 +25,75 @@
    * The entire content and the main section content area is `960px` wide.
 */
 * {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;   /* sets default font for all elements unless specified */
     color: #777777;
 }
 
 html, body {
     height: 100%;
     margin: 0;
-    z-index: -2;
+    z-index: -2;     /* added as a safety to ensure backgrounds do not eclipse features */
   }
 
 h1, h2, h3, h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.wrapper {
+    min-height: 100%;
+    background-image: url("../images/concrete_seamless.png");
+    background-size: cover;
+    margin: 0 auto -45px;
+}
+
+.header1 {
+    height: 80px;
+    max-width: 960px;
+    margin: auto;
+    background-color: #ffffff;
+    border-bottom: 2px solid #cccccc;
+    margin-bottom: 10px;
+}
+
+.name1 {
+    float: left;
+    background-color: #4aaaa5;
+    z-index: 3;
+    width: 40%;
+    min-width: 220px;
+    Height: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 22pt;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+/* .namelogo {
+    color: #ffffff;
+    text-align: center;
+} */
+
+.navbar {
+    float: right;
+    Height: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 35px 45px;
+}
+
+nav {
+    word-spacing: 10px;
+}
+
+a:link, a:visited {
+    color: #777777;
+    text-decoration: none;
+    display: inline-block;
+  }
+ 
 
 .maincon {
     color: #777777;
@@ -49,28 +105,6 @@ h1, h2, h3, h4 {
     overflow: auto;
     padding: 10px;
     border: 1px solid #dddddd;
-}
-
-
-.wrapper {
-    min-height: 100%;
-    background-image: url("../images/concrete_seamless.png");
-    background-size: cover;
-    /* background-color: green; */
-    /* Equal to height of footer */
-    /* But also accounting for potential margin-bottom of last child */
-    margin: 0 auto -45px;
-}
-
-.header1, .headerbox {
-    height: 80px;
-    margin: auto;
-    background-color: #ffffff;
-    border-bottom: 2px solid #cccccc;
-}
-
-.header1 {
-    max-width: 960px;
 }
 
 img.proj {
@@ -97,37 +131,6 @@ img.proj {
     text-align: center;
     padding: 10px;
 }
-
-.name1 {
-    float: left;
-    background-color: #4aaaa5;
-    z-index: 3;
-    width: 40%;
-    min-width: 180px;
-    Height: 80px;
-    text-align: center;
-
-}
-
-
-.navbar {
-    float: right;
-    Height: 100px;
-    margin: auto;
-    box-sizing: border-box;
-    padding: 35px 45px;
-}
-
-nav {
-    word-spacing: 10px;
-}
-
-a:link, a:visited {
-    color: #777777;
-    text-decoration: none;
-    display: inline-block;
-  }
- 
 
 .profpic {
     max-height: 200px;
@@ -175,11 +178,6 @@ input[type=submit] {
     width: 70px;
   }
 
-.namelogo {
-    color: #ffffff;
-    text-align: center;
-}
-
 .push {
     height: 45px;
 }
@@ -189,7 +187,7 @@ footer {
     height: 45px;
     text-align: center;
     padding-top: 7px;
-    border-top-width: 7px;
+    border-top-width: 8px;
     border-right-width: 0;
     border-left-width: 0;
     border-style: solid;
