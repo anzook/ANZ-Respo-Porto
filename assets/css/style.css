@@ -71,11 +71,6 @@ h1, h2, h3, h4 {
 
 }
 
-/* .namelogo {
-    color: #ffffff;
-    text-align: center;
-} */
-
 .navbar {
     float: right;
     Height: 100%;
@@ -88,11 +83,11 @@ nav {
     word-spacing: 10px;
 }
 
-a:link, a:visited {
+/* a:link, a:visited {
     color: #777777;
     text-decoration: none;
     display: inline-block;
-  }
+  } */
  
 
 .maincon {
@@ -108,28 +103,37 @@ a:link, a:visited {
 }
 
 img.proj {
-    height: 250px;
-    width: 250px;
+    height: 272px;
+    width: 272px;
     object-fit: cover;
+}
+
+a.projlink {                
+    display: block;     /* with size, this corrects the linking area */
+    height: 272px;
+    width: 272px;
+    text-decoration: none;
 }
 
 .project {
     float: left;
-    position: relative;
     box-sizing: border-box;
-    height: 250px;
-    width: 250px;
+    height: 272px;
+    width: 272px;
     margin: 20px;
+    /* border:  #4aaaa5 solid 3px; */
 }
 
 .projbanner {
     background-color: #4aaaa5;
     color: #ffffff;
     position: relative;
-    top: -75px;
+    top: -60px;
     z-index: 3;
     text-align: center;
-    padding: 10px;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 20pt;
+    padding: 6px;
 }
 
 .profpic {
