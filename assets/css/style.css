@@ -74,8 +74,8 @@ h1, h2, h3, h4 {
 }
 
 img.proj {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     object-fit: cover;
 }
 
@@ -83,8 +83,8 @@ img.proj {
     float: left;
     position: relative;
     box-sizing: border-box;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     margin: 20px;
 }
 
@@ -92,11 +92,10 @@ img.proj {
     background-color: #4aaaa5;
     color: #ffffff;
     position: relative;
-    top: -70px;
-    margin: auto;
+    top: -75px;
     z-index: 3;
     text-align: center;
-    height: 40px;
+    padding: 10px;
 }
 
 .name1 {
@@ -177,7 +176,8 @@ input[type=submit] {
   }
 
 .namelogo {
-    color: #ffffff !important;
+    color: #ffffff;
+    text-align: center;
 }
 
 .push {
