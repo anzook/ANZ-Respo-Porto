@@ -1,4 +1,4 @@
-/*    Style Guide
+/*    Style Guide from  assignment Readme
 * Colors (**Pro Tip:** Use the [Eye Dropper](https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka) Chrome extension to find the colors that are used on webpages.)
    * Teal color (used for headings and backgrounds): `#4aaaa5`
    * Regular font color (used for paragraphs and all text besides the headings): `#777777`
@@ -24,6 +24,10 @@
 * Dimensions:
    * The entire content and the main section content area is `960px` wide.
 */
+
+
+/* $Body elements  */
+
 * {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;   /* sets default font for all elements unless specified */
     color: #777777;
@@ -32,11 +36,12 @@
 html, body {
     height: 100%;
     margin: 0;
+    overflow-y: hidden;
     z-index: -2;     /* added as a safety to ensure backgrounds do not eclipse features */
   }
 
 body {
-    background-image: url("../images/concrete_seamless.png");    /* background image from subtlepatterns.com */
+    background-image: url("../images/extra_clean_paper_@2X.png");    /* background image (extra clean paper) from subtlepatterns.com */
     background-size: cover;
 }
 
@@ -46,16 +51,20 @@ h1, h2, h3, h4 {
 
 .wrapper {
     /* min-height: calc(100vh - 80px); */
-    min-height: 100%;
-    margin-bottom: -45px;
+    /* min-height: 100%; */
+    /* margin-bottom: -45px; */
+    height: 82%;
+    overflow-y: auto;
 }
 
+/* $Header elements */
+
 .header1 {
-    height: 80px;
+    height: 10%;
     background-color: #ffffff;
     border-bottom: 2px solid #cccccc;
     margin-bottom: 10px;
-    position: fixed;
+    /* position: fixed; */
     overflow: hidden;
     top: 0;
     width: 100%;
@@ -71,9 +80,9 @@ h1, h2, h3, h4 {
     float: left;
     background-color: #4aaaa5;
     z-index: 3;
-    width: 40%;
+    width: 35%;
     min-width: 230px;
-    Height: 80px;
+    /* Height: 80px; */
     box-sizing: border-box;
     padding: 25px;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
@@ -84,9 +93,11 @@ h1, h2, h3, h4 {
 
 }
 
+/* $Navigation $links elements */
+
 .navbar {
     float: right;
-    Height: 80px;
+    /* Height: 80px; */
     margin: auto;
     box-sizing: border-box;
     padding: 35px 45px;
@@ -96,10 +107,9 @@ nav {
     word-spacing: 10px;
 }
 
-.navdiv, .mainline {
+.navdiv {
     opacity: .5;
     color: #777777;
-
 }
 
 a.navlink:link, a:visited {
@@ -108,6 +118,7 @@ a.navlink:link, a:visited {
     display: inline-block;
   }
  
+/* $Content structure and $Profile */
 
 .maincon {
     color: #777777;
@@ -118,9 +129,24 @@ a.navlink:link, a:visited {
     clear: both;
     overflow: auto;
     padding: 10px;
-    margin-top: 110px;
+    /* margin-top: 110px; */
     border: 1px solid #dddddd;
 }
+
+.profpic {
+    max-height: 200px;
+    max-width: 200px;
+    height: auto;
+    width: auto;
+    float: left;
+    margin: 7px;
+}
+
+h1.header2 {
+    color: #4aaaa5;
+    padding-left: 15px;
+}
+/* $Portfolio elements */
 
 img.proj {
     height: 272px;
@@ -159,19 +185,7 @@ a.projlink:hover {
     padding: 6px;
 }
 
-.profpic {
-    max-height: 200px;
-    max-width: 200px;
-    height: auto;
-    width: auto;
-    float: left;
-    margin: 7px;
-}
-
-h1.header2 {
-    color: #4aaaa5;
-    padding-left: 15px;
-}
+/* $Contact elements */
 
 #comment-form {
     color: #777777;
@@ -213,9 +227,9 @@ input[type=submit] {
 
 footer {
     background-color: #666666;
-    height: 45px;
+    height: 8%;
     text-align: center;
-    padding-top: 7px;
+    padding-top: 1px;
     border-top-width: 8px;
     border-right-width: 0;
     border-left-width: 0;
