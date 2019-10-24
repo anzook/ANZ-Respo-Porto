@@ -33,16 +33,19 @@
     color: #777777;
 }
 
-html, body {
-    height: 100%;
+html {
+    /* height: 100%;
     margin: 0;
-    overflow-y: hidden;
-    z-index: -2;     /* added as a safety to ensure backgrounds do not eclipse features */
-  }
+    z-index: -2;     added as a safety to ensure backgrounds do not eclipse features */
+    position: relative;
+    min-height: 100%;
+}
 
 body {
     background-image: url("../images/extra_clean_paper_@2X.png");    /* background image (extra clean paper) from subtlepatterns.com */
     background-size: cover;
+     /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
 
 h1, h2, h3, h4 {
@@ -53,8 +56,8 @@ h1, h2, h3, h4 {
     /* min-height: calc(100vh - 80px); */
     /* min-height: 100%; */
     /* margin-bottom: -45px; */
-    height: 82%;
-    overflow-y: auto;
+    /* height: 82%;
+    overflow-y: auto; */
 }
 
 /* $Header elements */
@@ -97,15 +100,11 @@ h1, h2, h3, h4 {
 /* $Navigation $links elements */
 
 .navbar {
-    float: right;
-    /* Height: 80px; */
-    margin: auto;
-    box-sizing: border-box;
-    padding: 35px 45px;
+   
 }
 
 nav {
-    word-spacing: 10px;
+    /* word-spacing: 10px; */
 }
 
 .navdiv {
@@ -226,18 +225,14 @@ input[type=submit] {
 
 /* $footer styling  */
 
-.pushFoot {
-    height: 45px;
-}
 
 footer {
     background-color: #666666;
-    height: 8%;
-    text-align: center;
-    padding-top: 1px;
-    border-top-width: 8px;
-    border-right-width: 0;
-    border-left-width: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
     border-style: solid;
     border-color: #4aaaa5;
 }
