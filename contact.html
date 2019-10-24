@@ -30,14 +30,29 @@
                     </header>
             
                 <!-- Begin page content -->
-                <div class="container">
+                <div class="container maincon">
                     <header class="page-header">
-                        <h1>Header text</h1>
+                        <h1 class="header2">Contact</h1>
                         <hr>
                     </header>
                     <div class="row">
                         <div class="col">
-                            <p> form goes here</p>
+                                <form action="" id="comment-form">
+                                        <!-- action target currently blank, form does not submit -->
+                                        Name
+                                        <br>
+                                        <input type="text" name="name" placeholder="John Smith">
+                                        <br>
+                                        Email
+                                        <br>
+                                        <input type="text" name="email" placeholder="example@gmail.com">
+                                        <br>
+                                        Message
+                                        <br>
+                                        <textarea form="comment-form" name="message"></textarea>
+                                        <br>
+                                        <input type="submit" value="Submit">
+                                    </form>
                         </div>
                     </div>
                 </div>
