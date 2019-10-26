@@ -20,11 +20,10 @@
 
 * Background images:
    * The background pattern used was found on [Subtle Patterns](https://subtlepatterns.com/). You can browse through that site and use whichever pattern you like.
-
-* Dimensions:
-   * The entire content and the main section content area is `960px` wide.
 */
 
+
+/* stylesheet resued from Assignment #1 - commented out decrecapted styles for reference */
 
 /* $Body elements  */
 
@@ -208,6 +207,7 @@ textarea, input[type=text] {
   }
 
 textarea {
+    /* set text area height */
     height: 140px;
     font-size: 11pt;
   }
@@ -230,7 +230,7 @@ footer {
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 60px;
+    height: 60px;     
     border-style: solid;
     border-color: #4aaaa5;
 }
