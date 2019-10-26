@@ -1,15 +1,15 @@
 
 # ANZ-Respo-Porto
-Homework #2: A responsive portfolio
+Homework #2: A responsive portfolio using Bootstrap
 # Alex Zook - Responsive Profile Draft 26.10.2019
 
 A bootstrap beginner website challenge to feature myself as a developer.
 
 ## Viewing the website
 
-Github Pages link: ()
+Github Pages link: (https://github.com/anzook/ANZ-Respo-Porto)
 
-All website assets are contained within the repo ()
+All website assets are contained within the repo (https://anzook.github.io/ANZ-Respo-Porto/)
 
 Pages include:
 * About Me (index.html)
@@ -28,6 +28,10 @@ Thanks to Dan Thareja who encouraged me to learn how to code.
 ## Known Issues
 
 * ❗ 'Contact' form does not currently have an action assinged- it will not send ❗ 
+
+## Notes
+
+* Content and styles reused from assignment #1
 
 ## Rights and Privacy
 
